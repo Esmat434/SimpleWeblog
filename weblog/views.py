@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.http import Http404
+from django.http import HttpResponseNotFound
 from accounts.decorators import (
     login_required
 )
@@ -21,7 +21,7 @@ def post_detail(request,slug):
         post = Post.objects.get(slug = slug)
         return render(request,'post.html',{'post':post})
     except Post.DoesNotExist:
-        return Http404("Post Not Found.")
+        return HttpResponseNotFound("Post Not Found.")
     
 @login_required
 def contact(request):
