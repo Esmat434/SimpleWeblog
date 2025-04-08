@@ -1,7 +1,7 @@
 # 📝 SimpleWeblog
 
 SimpleWeblog is a basic blogging platform built with Django.  
-It allows users to create, read, update, and delete blog posts through a simple and clean interface.
+It allows users to read, blog posts through a simple and clean interface.
 
 ---
 
